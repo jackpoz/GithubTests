@@ -9,6 +9,6 @@ jobs:
     steps:
     - name: Tagging issue
       id: tag-issue
-      uses: jackpoz/TrinityCoreActions@issues
+      uses: jackpoz/TrinityCoreActions@issues-stable
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
