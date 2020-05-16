@@ -10,5 +10,5 @@ jobs:
     - name: Tagging issue
       id: tag-issue
       uses: jackpoz/TrinityCoreActions@issues
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
