@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Tagging issues
     steps:
-    - name: Single step
-      id: single-step
+    - name: Tagging issue
+      id: tag-issue
       uses: jackpoz/TrinityCoreActions@issues
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
