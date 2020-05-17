@@ -5,10 +5,10 @@ on:
 jobs:
   tag_issues:
     runs-on: ubuntu-latest
-    name: Tagging issues
+    name: Issue Labeler
     steps:
-    - name: Tagging issue
-      id: tag-issue
-      uses: jackpoz/TrinityCoreActions@issues-stable
+    - name: Issue Labeler
+      id: issue-labeler
+      uses: rinityCore/GitHub-Actions@issue-labeler-prod
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
