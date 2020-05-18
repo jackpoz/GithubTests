@@ -9,6 +9,6 @@ jobs:
     steps:
     - name: Issue Labeler
       id: issue-labeler
-      uses: TrinityCore/GitHub-Actions@issue-labeler-prod
+      uses: TrinityCore/GitHub-Actions@issue-labeler
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
