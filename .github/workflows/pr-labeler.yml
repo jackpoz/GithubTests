@@ -5,10 +5,10 @@ on:
 jobs:
   tag_issues:
     runs-on: ubuntu-latest
-    name: Issue Labeler
+    name: Pull Request Labeler
     steps:
-    - name: Issue Labeler
-      id: issue-labeler
+    - name: Pull Request Labeler
+      id: pr-labeler
       uses: TrinityCore/GitHub-Actions@pr-labeler
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
