@@ -1,8 +1,6 @@
 on:
-  pull_request:
-    types: [opened]
-    branches:
-    - '**'
+  schedule:
+    - cron: '*/5 * * * *'
 
 jobs:
   pr_labeler:
