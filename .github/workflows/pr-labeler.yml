@@ -4,6 +4,7 @@ on:
 
 jobs:
   pr_labeler:
+    if: github.repository == 'jackpoz/GithubTests'
     runs-on: ubuntu-latest
     name: Pull Request Labeler
     steps:
