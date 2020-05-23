@@ -1,7 +1,8 @@
 on:
   pull_request:
     types: [opened]
-    branches: *
+    branches:
+    - '**'
 
 jobs:
   pr_labeler:
