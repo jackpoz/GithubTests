@@ -12,6 +12,8 @@ body:
       description: |
         Description of the problem or issue here.
         If this is a crash, post the crashlog (upload to https://gist.github.com/).
+    validations:
+      required: true
   - type: input
     id: contact
     attributes:
