@@ -22,3 +22,13 @@ body:
         Tell us what should happen instead.
     validations:
       required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce the problem
+      description: |
+        1. Step 1 include entries of affected creatures / items / quests with a link to the relevant wowhead or https://tcubuntu.northeurope.cloudapp.azure.com/aowow/ page.  
+        2. Step 2
+        3. Step 3
+    validations:
+      required: true
