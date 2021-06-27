@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this form! Please make sure to fill all fields, including the Title above.
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Description
