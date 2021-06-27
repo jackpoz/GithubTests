@@ -14,54 +14,56 @@ body:
         If this is a crash, post the crashlog (upload to https://gist.github.com/).
     validations:
       required: true
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
-    id: what-happened
+    id: expected
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Expected behaviour
+      description: |
+        Tell us what should happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce the problem
+      description: |
+        1. Step 1 include entries of affected creatures / items / quests with a link to the relevant wowhead or https://tcubuntu.northeurope.cloudapp.azure.com/aowow/ page.  
+        2. Step 2
+        3. Step 3
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: branch
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Branch
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - 3.3.5
+        - master
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: commit
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: TC rev. hash/commit
+      description: |
+        Copy the result of server debug command (if you need to run it from client get prat addon)
+    validations:
+      required: true
+  - type: textarea
+    id: os
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Operating system
+      description: |
+        Operating System, i.e. Windows 10 x64, Debian 10 x64, etc
+    validations:
+      required: true
+  - type: textarea
+    id: custom
+    attributes:
+      label: Custom changes
+      description: |
+        List which custom changes you have applied, i.e. transmog patch, etc.
+        Write "None" if you don't have any changes applied.
+    validations:
+      required: true
+  - type: textarea
