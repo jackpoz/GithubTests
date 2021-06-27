@@ -2,7 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: Discord
     url: https://discord.com/invite/3UxRn4Kn?utm_source=Discord%20Widget&utm_medium=Connect
+    about: Chat
   - name: Community Support Forum
     url: https://community.trinitycore.org/
+    about: Forum
   - name: How to Compile
     url: https://trinitycore.atlassian.net/
+    about: Wiki
