@@ -4,7 +4,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this form! Please make sure to fill all fields, including the Title above.
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Description of the problem or issue here.
+        If this is a crash, post the crashlog (upload to https://gist.github.com/).
   - type: input
     id: contact
     attributes:
