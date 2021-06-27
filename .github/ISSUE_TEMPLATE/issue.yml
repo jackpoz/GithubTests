@@ -32,3 +32,12 @@ body:
         3. Step 3
     validations:
       required: true
+  - type: dropdown
+    id: branch
+    attributes:
+      label: Branch
+      options:
+        - 3.3.5
+        - master
+    validations:
+      required: true
