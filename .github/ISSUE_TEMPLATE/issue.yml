@@ -33,6 +33,10 @@ body:
       label: SQL fix
       description: |
         Tell us what should happen instead.
+      value: |
+        ```sql
+        --
+        ```
     validations:
       required: true
   - type: dropdown
